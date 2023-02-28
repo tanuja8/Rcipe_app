@@ -1,0 +1,7 @@
+.weather_area{
+    width: 50%;
+    height: 400px;
+    margin: 0 auto;
+    margin-top: 20px;
+    background-color: gray;
+}
