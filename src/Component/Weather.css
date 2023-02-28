@@ -1,7 +1,26 @@
 .weather_area{
-    width: 50%;
+    width: 350px;
     height: 400px;
     margin: 0 auto;
     margin-top: 20px;
     background-color: gray;
+    border-radius: 10px;
+}
+.input_area{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+input{
+    border: none;
+    border-radius: 10px;
+    padding: 5px;
+}
+.get_btn{
+    margin-left: 10px;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    background-color: gold;
 }
