@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import axios from 'axios'
 import "./Weather.css"
+// import img2 from "../Component/img/sky.jpg"
 
 const Weather = () => {
   const [city, setCity] = useState("Kolkata")
@@ -25,6 +26,9 @@ const Weather = () => {
         </div>
         <div className='location_area'>
           <h2>{data.name}</h2>
+        </div>
+        <div>
+          {/* <h3>{data.weather.main}</h3> */}
         </div>
         <div>
           <h3>{data.main?.temp_max}</h3>
