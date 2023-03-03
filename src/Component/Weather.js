@@ -3,7 +3,7 @@ import axios from 'axios'
 import "./Weather.css"
 
 const Weather = () => {
-  const [city, setCity] = useState("")
+  const [city, setCity] = useState("Kolkata")
   const [data, setData] = useState("");
   // const [data,setData] = useState("")
   const getData = () => {
@@ -16,7 +16,7 @@ const Weather = () => {
   return (
     <>
       <div className='weather_area '>
-        <h1 className='text-center text-white'>WEATHER APP</h1>
+        <h1 className='text-center '>WEATHER APP</h1>
         <div className='input_area'>
           <input type="text" className='from-control' value={city} onChange={(event) => {
             setCity(event.target.value);
@@ -24,7 +24,7 @@ const Weather = () => {
           <button type="submit" className="get_btn" onClick={getData}>Get temp</button>
         </div>
         <div className='location_area'>
-          <h1>{data.name}</h1>
+          <h2>{data.name}</h2>
         </div>
         <div>
           <h3>{data.main?.temp_max}</h3>
