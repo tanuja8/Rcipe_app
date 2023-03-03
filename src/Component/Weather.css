@@ -1,8 +1,4 @@
-.background_img{
-    background-image: url('https://img.freepik.com/free-photo/sun-rays-cloudy-sky_23-2148824930.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-}
+
 .weather_area{
     width: 400px;
     height: 600px;
@@ -10,7 +6,11 @@
     margin-top: 20px;
     background-color: rgb(137, 195, 241);
     border-radius: 10px;
+    background-image: url('https://i.pinimg.com/736x/66/9e/a0/669ea092e14f4d9e4f3a9229825bfa41.jpg');
+    background-size: cover;
+    box-shadow:5px 10px 8px #888888;
 }
+    
 h1{
     color:blue;
     text-shadow: 2px 2px 4px #000000;
@@ -25,6 +25,8 @@ input{
     border: none;
     border-radius: 10px;
     padding: 5px;
+    text-align: center;
+    
 }
 .get_btn{
     margin-left: 10px;

@@ -17,7 +17,7 @@ const Weather = () => {
   return (
     <>
       <div className='weather_area '>
-        <h1 className='text-center '>WEATHER APP</h1>
+        <h1 className='text-center py-1 '>WEATHER APP</h1>
         <div className='input_area'>
           <input type="text" className='from-control' value={city} onChange={(event) => {
             setCity(event.target.value);
@@ -30,9 +30,8 @@ const Weather = () => {
         <div>
           {/* <h3>{data.weather.main}</h3> */}
         </div>
-        <div>
-          <h3>{data.main?.temp_max}</h3>
-          <h4>{data.main?.temp_min}</h4>
+        <div className='text-white text-center m-3 p-3 '>
+          <h3>{((data.main?.temp)-273.15).toFixed(2)} °C</h3>
         </div>
       </div>
 
