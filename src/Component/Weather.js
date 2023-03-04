@@ -31,7 +31,7 @@ const Weather = () => {
           <h3>{data?.main?.temp &&((data?.main?.temp)-273.15).toFixed(2)+"°C"}</h3>
         </div>
         <div>
-          <h3 className='text-white text-center'>{data.weather[0].main}</h3>
+          <h3 className='text-white text-center'>{data && data.weather[0].main}</h3>
         </div>
       </div>
 
