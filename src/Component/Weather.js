@@ -27,11 +27,11 @@ const Weather = () => {
         <div className='location_area'>
           <h2>{data.name}</h2>
         </div>
-        <div>
-          {/* <h3>{data.weather.main}</h3> */}
-        </div>
         <div className='text-white text-center m-3 p-3 '>
-          <h3>{((data.main?.temp)-273.15).toFixed(2)} °C</h3>
+          <h3>{data?.main?.temp &&((data?.main?.temp)-273.15).toFixed(2)+"°C"}</h3>
+        </div>
+        <div>
+          <h3 className='text-white text-center'>{data.weather[0].main}</h3>
         </div>
       </div>
 
